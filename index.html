@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Puerto Seguro</title>
+</head>
+
+<body>
+    <header>
+        <h1>Puerto Seguro</h1>
+        <div class="sections">
+            <a href="#menu"><h2>Menu</h2></a>
+            <a href="#reservas"><h2>Reservas <ion-icon name="restaurant-outline"></ion-icon></h2></a>
+            <a href="#contacto"><h2>Contacto <ion-icon name="logo-whatsapp"></ion-icon></h2></a>
+            <a href="https://maps.app.goo.gl/FLtCtsCdZUpv1JT1A" target="_blank"><h2>Ubicación<ion-icon name="location-outline"></ion-icon></h2></a>
+        </div>
+        
+    </header>
+    <main>
+        <section  class="bienvenida">
+            <div class="adorno"></div>
+            <img src="/img/Fondo.png" alt="">
+            <div class="bienvenida_container">
+                <h1>Bienvenido a <span>Puerto Seguro:</span></h1>
+                <p>ofrecemos un buen servicio, almuerzos y platos deliciosos. Disfruta de nuestros platos hechos con ingredientes frescos y mucho cariño en nuestro pensión familiar PUERTO SEGURO.</p>
+                <a href="#menu"><h2>VER MENÚ</h2></a>
+            </div>
+            
+
+        </section>
+
+        <section class="nosotros">
+            <img class="border left" src="./img/BORDE.png" alt="">
+            <img class="border right" src="./img/BORDE.png" alt="">
+            <img class="border top" src="./img/BORDE.png" alt="">
+            <img class="border bottom" src="./img/BORDE.png" alt="">
+            
+            <div class="adorno adorno_top"></div>
+            <div class="adorno adorno_bottom"></div>
+
+            <div class="nosotros_content">
+                <h1>Nosotros</h1>
+                <p>En Puerto Seguro, desde hace mas de 15 años, nos dedicamos a ofrecer comidas deliciosas. Nuestra misión es brindarte un servicio amigable y único con una variedad de platos hechos con ingredientes frescos.</p>
+            </div>
+            <img class="nosotros_img" src="./img/Nostros.jpg" alt="">
+            
+        </section>
+
+        <section id="menu" class="menu">
+            
+            <div class="adorno"></div>
+            <div class="adorno_bottom"></div>
+            <h1>MENU</h1>
+
+            <ul class="barra_menu">
+
+                <button onclick="showJugosTes()" id="btn">Jugos y Tés</button>
+                
+                <button onclick="showPlatos()" id="btn">Platos a la carta</button>
+
+                <button onclick="showEspecial()" id="btn">Viernes Especiales</button>
+
+                <button onclick="showSandwichOmellete()" id="btn">Sandwich y Omellete</button>
+
+            </ul>
+
+            <ul class="cajamenu">
+                
+
+                <li>
+                    <img src="/img/Platos2/Medio_pique.png" alt="">
+                    <h2>Pique Macho</h2>
+                    <h2>Papa frita</h2>
+                    <h2>25 .Bs</h2>
+                </li>
+                
+                <li>
+                    <img src="/img/Platos2/medio_lomo.png" alt="">
+                    <h2>Medio Lomo</h2>
+                    <h2>Ensalada Papa Arroz</h2>
+                    <h2>15 .Bs</h2>
+                </li>
+                
+                <li>
+                    <img src="/img/Platos2/milanesa_carne.png" alt="">
+                    <h2>Milanesa de Carne</h2>
+                    <h2>Ensalada Papa Arroz</h2>
+                    <h2>17 .Bs</h2>
+                </li>
+                
+                <li>
+                    <img src="/img/Platos2/Milanesa_pollo.png" alt="">
+                    <h2>Milanesa de Pollo</h2>
+                    <h2>Ensalada Papa Arroz</h2>
+                    <h2>18 .Bs</h2>
+                </li>
+                
+                <li>
+                    <img src="/img/Platos2/pollo_dorado.png" alt="">
+                    <h2>Pollo Dorado</h2>
+                    <h2>Ensalada Papa Arroz</h2>
+                    <h2>15 .Bs</h2>
+                </li>
+                
+                <li>
+                    <img src="/img/Platos2/Asado_especial.png" alt="">
+                    <h2>Asado Especial</h2>
+                    <h2>Chorrellana Papa Arroz</h2>
+                    <h2>17 .Bs</h2>
+                </li>
+                
+                <li>
+                    <img src="/img/Platos2/silpancho_cochabambino.png" alt="">
+                    <h2>Silpancho Cochabambino</h2>
+                    <h2>Sarsa Papa Arroz</h2>
+                    <h2>18 .Bs</h2>
+                </li>
+                
+                <li>
+                    <img src="/img/Platos2/Caldo_de_pollo.png" alt="">
+                    <h2>Caldo de Pollo</h2>
+                    <h2>Chuño Papa Arroz</h2>
+                    <h2>13 .Bs</h2>
+                </li>
+                
+                <li>
+                    <img src="/img/Platos2/Revuelto_carne.png" alt="">
+                    <h2>Revuelto de Carne</h2>
+                    <h2>Arroz</h2>
+                    <h2>18 .Bs</h2>
+                </li>
+                
+                <li>
+                    <img src="/img/Platos2/Revuelto_Pollo.png" alt="">
+                    <h2>Revuelto de Pollo</h2>
+                    <h2>Arroz</h2>
+                    <h2>18 .Bs</h2>
+                </li>
+            </ul>
+        </section>
+
+        <section class="horario">
+            <h1>Horario de atención</h1>
+            <h3><ul>
+                <li>Lunes: 8:00 a 15:00</li>
+                <li>Martes: 8:00 a 15:00</li>
+                <li>Miercoles: 8:00 a 15:00</li>
+                <li>Jueves: 8:00 a 15:00</li>
+                <li>Viernes: 8:00 a 15:00</li>
+            </ul></h3>
+
+        </section>
+
+        <section class="rese_conta">
+            <div class="adorno_rese_conta"></div>
+            <section id="reservas" class="reservas">
+                <h1>RESERVAS</h1>
+                <p>Para reservaciones llamar al telfono fijo, por favor</p>
+                <p><ion-icon name="call-outline"></ion-icon> 2820862</p>
+            </section>
+
+            <section id="contacto" class="contacto">
+                <h1>CONTACTO</h1>
+                <p>Unete a nuestro grupo de WhatsApp para ver el menu del día</p>
+                <a class="WhatsApp" href="https://chat.whatsapp.com/EVm8rjwSsgd1Jyv1jmXNLP" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+            </section>
+        </section>
+        
+        
+    </main>
+
+</body>
+<script src="./app.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

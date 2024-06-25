@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+span {
+  color: orange;
+}
+
+a {
+  transition: 0.2s;
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  scale: 1.1;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 15px;
+}
+
+body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+body::-webkit-scrollbar {
+  box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  width: 7px;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgba(255, 253, 253, 0.4);
+  border-radius: 5px;
+}
+body main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+}
+body main h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+body main .bienvenida {
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  background: rgba(70, 15, 15, 0.4);
+}
+body main .bienvenida::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+body main .bienvenida .adorno {
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(8, 196, 8, 0), rgb(4, 156, 11) 98%);
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+}
+body main .bienvenida img {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .bienvenida .bienvenida_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 350px;
+  left: 25%;
+  width: 50%;
+  color: white;
+  gap: 28px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+body main .bienvenida .bienvenida_container a {
+  background: rgb(209, 101, 0);
+  padding: 8px;
+  border-radius: 8px;
+}
+body main .nosotros {
+  overflow: hidden;
+  position: relative;
+  height: auto;
+  display: flex;
+  align-items: center;
+  min-height: 500px;
+  color: rgb(0, 0, 0);
+  background: white;
+  width: 100%;
+  justify-content: center;
+}
+body main .nosotros::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+body main .nosotros .border {
+  position: absolute;
+}
+body main .nosotros .left {
+  rotate: 90deg;
+  left: -140px;
+}
+body main .nosotros .right {
+  rotate: -90deg;
+  right: -140px;
+  height: auto;
+}
+body main .nosotros .top {
+  rotate: 180deg;
+  top: -20px;
+  width: 100%;
+}
+body main .nosotros .bottom {
+  bottom: 0px;
+  width: 100%;
+}
+body main .nosotros .adorno_top {
+  top: -2px;
+  position: absolute;
+  background: linear-gradient(to top, rgba(8, 196, 8, 0), rgb(4, 156, 11) 98%);
+  width: 100%;
+  height: 50px;
+}
+body main .nosotros .adorno_bottom {
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(8, 196, 8, 0), rgb(4, 156, 11) 80%);
+  width: 100%;
+  height: 50px;
+}
+body main .nosotros .nosotros_content {
+  padding: 0 0 0 70px;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
+}
+body main .nosotros .nosotros_img {
+  padding: 0 50px 0 0;
+  position: relative;
+  width: 50%;
+}
+body main .menu {
+  background: url(/img/FondoMenu.jpg);
+  padding: 50px;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+body main .menu .barra_menu {
+  position: relative;
+}
+body main .menu .barra_menu button {
+  color: white;
+  background: rgb(161, 14, 14);
+  border-radius: 5px;
+  width: 120px;
+  height: 30px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  box-shadow: 5px 5px 8px black;
+  cursor: pointer;
+  transition: 0.2s;
+}
+body main .menu .barra_menu button:hover {
+  scale: 1.1;
+}
+body main .menu::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+body main .menu h1 {
+  z-index: 5;
+}
+body main .menu .adorno {
+  position: absolute;
+  background: linear-gradient(to top, rgba(8, 196, 8, 0), rgb(4, 156, 11) 98%);
+  width: 100%;
+  height: 150px;
+  top: 0;
+}
+body main .menu .adorno_bottom {
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(8, 196, 8, 0), rgb(0, 0, 0) 98%);
+  width: 100%;
+  height: 150px;
+  bottom: 0;
+}
+body main .menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  gap: 60px;
+}
+body main .menu ul li {
+  padding: 10px;
+  position: relative;
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  background: black;
+  box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+body main .menu ul li img {
+  position: relative;
+  width: 170px;
+  height: 170px;
+}
+body main .menu ul li h2 {
+  font-weight: 100;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.4);
+}
+body main .horario {
+  background: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  min-height: 250px;
+  align-items: center;
+  padding: 50px;
+}
+body main .horario ul {
+  list-style: none;
+}
+body main .horario ul li {
+  margin-top: 10px;
+  left: 0;
+}
+body main .rese_conta {
+  background: url(/img/RESE_CONTA.jpg);
+  background-size: cover;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  height: auto;
+  min-height: 250px;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+}
+body main .rese_conta .adorno_rese_conta {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to bottom, black 10%, rgba(170, 137, 137, 0));
+  top: 0;
+}
+body main .rese_conta::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+body main .rese_conta p {
+  font-size: 15px;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+body main .rese_conta .reservas {
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  height: 150px;
+  z-index: 5;
+}
+body main .rese_conta .contacto {
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  height: 150px;
+  z-index: 5;
+}
+body main .rese_conta .contacto .WhatsApp {
+  background: green;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+body header {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background: rgba(146, 33, 33, 0.5);
+  color: white;
+  font-size: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+body header h1 {
+  cursor: pointer;
+  position: relative;
+  width: 30%;
+  transition: 0.2s;
+}
+body header h1:hover {
+  scale: 1.1;
+  letter-spacing: 1px;
+}
+body header .sections {
+  position: relative;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5px;
+}/*# sourceMappingURL=style.css.map */
