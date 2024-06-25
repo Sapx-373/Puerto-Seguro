@@ -57,17 +57,19 @@ body main h1 {
 }
 body main .bienvenida {
   overflow: hidden;
-  z-index: 1;
   position: relative;
   width: 100%;
-  background: rgba(70, 15, 15, 0.4);
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body main .bienvenida::before {
   content: "";
   position: absolute;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
 }
 body main .bienvenida .adorno {
   position: absolute;
@@ -91,8 +93,7 @@ body main .bienvenida .bienvenida_container {
   align-items: center;
   flex-direction: column;
   height: 350px;
-  left: 25%;
-  width: 50%;
+  width: 70%;
   color: white;
   gap: 28px;
   -webkit-user-select: none;
@@ -174,23 +175,27 @@ body main .nosotros .nosotros_img {
 }
 body main .menu {
   background: url(/img/FondoMenu.jpg);
-  padding: 50px;
   position: relative;
-  align-items: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 20px;
 }
+body main .menu h1 {
+  margin: 20px 20px 0px 20px;
+  font-size: 40px;
+}
 body main .menu .barra_menu {
   position: relative;
+  padding: 20px 2px;
+  background: rgba(0, 0, 0, 0.5);
 }
 body main .menu .barra_menu button {
   color: white;
   background: rgb(161, 14, 14);
   border-radius: 5px;
-  width: 120px;
-  height: 30px;
+  width: 90px;
+  height: 60px;
   font-weight: bold;
   border: none;
   outline: none;
@@ -200,6 +205,7 @@ body main .menu .barra_menu button {
 }
 body main .menu .barra_menu button:hover {
   scale: 1.1;
+  background: rgb(65, 2, 2);
 }
 body main .menu::before {
   content: "";
@@ -239,10 +245,6 @@ body main .menu ul li {
   height: 250px;
   overflow: hidden;
   background: black;
-  box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -257,6 +259,11 @@ body main .menu ul li h2 {
   font-weight: 100;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.8);
+}
+body main .menu ul li .orange {
+  background: orangered;
+  padding: 2px;
+  border-radius: 5px;
 }
 body main .horario {
   background: black;
@@ -340,7 +347,8 @@ body header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 15px;
-  background: rgba(146, 33, 33, 0.5);
+  height: 50px;
+  background: rgba(146, 33, 33, 0.7);
   color: white;
   font-size: 10px;
   -webkit-user-select: none;
@@ -359,7 +367,7 @@ body header h1:hover {
 }
 body header .sections {
   position: relative;
-  width: 60%;
+  width: 70%;
   display: flex;
   justify-content: space-between;
   margin-left: 5px;
