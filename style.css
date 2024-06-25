@@ -188,6 +188,8 @@ body main .menu h1 {
 body main .menu .barra_menu {
   position: relative;
   padding: 20px 2px;
+  align-items: center;
+  justify-content: space-around;
   background: rgba(0, 0, 0, 0.5);
 }
 body main .menu .barra_menu button {
