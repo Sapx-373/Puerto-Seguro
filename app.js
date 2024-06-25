@@ -210,7 +210,7 @@ const PlatosLista = Platos.map(card =>`
         <img src=${card.imagen} alt="">
         <h2>${card.titulo}</h2>
         <h2>${card.guar}</h2>
-        <h2>${card.precio} .Bs</h2>
+        <h2 class="orange">${card.precio} .Bs</h2>
     </li>
     ` ).join(" ");
 
@@ -218,7 +218,7 @@ const SandwichLista = Sandwich.map(card =>`
     <li>
         <img src=${card.imagen} alt="">
         <h2>${card.titulo}</h2>
-        <h2>${card.precio} .Bs</h2>
+        <h2 class="orange">${card.precio} .Bs</h2>
     </li>
     ` ).join(" ");
 
@@ -226,7 +226,7 @@ const OmelettesLista = Omelettes.map(card =>`
     <li>
         <img src=${card.imagen} alt="">
         <h2>${card.titulo}</h2>
-        <h2>${card.precio} .Bs</h2>
+        <h2 class="orange">${card.precio} .Bs</h2>
     </li>
     ` ).join(" ");
 
@@ -235,7 +235,7 @@ const EspecialLista = Especial.map(card =>`
         <img src=${card.imagen} alt="">
         <h2>${card.titulo}</h2>
         <h2>${card.guar}</h2>
-        <h2>${card.precio} .Bs</h2>
+        <h2 class="orange">${card.precio} .Bs</h2>
     </li>
     ` ).join(" ");
 
@@ -243,7 +243,7 @@ const JugosLista = Jugos.map(card =>`
     <li>
         <img src=${card.imagen} alt="">
         <h2>${card.titulo}</h2>
-        <h2>${card.precio} .Bs</h2>
+        <h2 class="orange">${card.precio} .Bs</h2>
     </li>
     ` ).join(" ");
 
@@ -251,7 +251,7 @@ const TesLista = Tes.map(card =>`
     <li>
         <img src=${card.imagen} alt="">
         <h2>${card.titulo}</h2>
-        <h2>${card.precio} .Bs</h2>
+        <h2 class="orange">${card.precio} .Bs</h2>
     </li>
     ` ).join(" ");
 
