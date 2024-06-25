@@ -206,7 +206,6 @@ body main .menu .barra_menu button {
   transition: 0.2s;
 }
 body main .menu .barra_menu button:hover {
-  scale: 1.1;
   background: rgb(65, 2, 2);
 }
 body main .menu::before {
