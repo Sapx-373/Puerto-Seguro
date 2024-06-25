@@ -256,7 +256,7 @@ body main .menu ul li img {
 body main .menu ul li h2 {
   font-weight: 100;
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.8);
 }
 body main .horario {
   background: black;
