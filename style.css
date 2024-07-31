@@ -536,6 +536,9 @@ body header .sections {
   body main .menu .barra_menu button {
     font-size: 12px;
   }
+  body main .menu .cajamenu {
+    gap: 30px;
+  }
   body main .menu .cajamenu li {
     width: 150px;
     height: 245px;
