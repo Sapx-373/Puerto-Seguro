@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 span{
     color: orange;
@@ -66,7 +66,7 @@ body{
             }
             .adorno{
                 position: absolute;
-                background: linear-gradient(to bottom, rgb(8, 196, 8, 0), rgb(4, 156, 11) 98%);
+                background: linear-gradient(to bottom, rgb(8, 196, 8, 0), rgb(255, 123, 0) 98%);
                 width: 100%;
                 height: 100px;
                 bottom: 0;
@@ -103,50 +103,23 @@ body{
             height: auto;
             display: flex;
             align-items: center;
-            min-height: 500px;
-            color: rgb(0, 0, 0);
-            background: white;
+            min-height: 400px;
+            color: rgb(126, 68, 3);
+            background: rgb(248, 231, 183);
             width: 100%;
             justify-content: center;
-            &::before{
-                content: "";
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                background: rgba(0, 0, 0, .2);
-            }
-            .border{
-                position: absolute;            
-            }
-            .left{
-                rotate: 90deg;
-                left: -140px;
-            }
-            .right{
-                rotate: -90deg;
-                right: -140px;
-                height: auto;
-            }
-            .top{
-                rotate: 180deg;
-                top: -20px;
-                width: 100%;
-            }
-            .bottom{
-                bottom: 0px;
-                width: 100%;
-            }
+            font-weight: bolder;
             .adorno_top{
                 top: -2px;
                 position: absolute;
-                background: linear-gradient(to top, rgb(8, 196, 8, 0), rgb(4, 156, 11) 98%);
+                background: linear-gradient(to top, rgb(8, 196, 8, 0), rgb(255, 123, 0) 98%);
                 width: 100%;
                 height: 50px;
             }
             .adorno_bottom{
                 bottom: 0;
                 position: absolute;
-                background: linear-gradient(to bottom, rgb(8, 196, 8, 0), rgb(4, 156, 11) 80%);
+                background: linear-gradient(to bottom, rgb(8, 196, 8, 0), rgb(255, 123, 0) 80%);
                 width: 100%;
                 height: 50px;
             }
@@ -167,13 +140,15 @@ body{
             }
         }
         .menu{
-            background: url(/img/FondoMenu.jpg);
+            background: url(./img/FondoMenu3.jpg) ;
             
             position: relative;
             display: flex;
             justify-content: center;
             flex-direction: column;
             gap: 20px;
+            width: 100%;
+            height: auto;
             h1{
                 margin: 20px 20px 0px 20px;
                 font-size: 40px;
@@ -183,17 +158,20 @@ body{
                 padding: 20px 2px;
                 align-items: center;
                 justify-content: space-around;
-                background: rgba(0, 0, 0,.5);
                 button{
                     color: white;
-                    background: rgb(161, 14, 14);
+                    background: rgb(255, 115, 0);
                     border-radius: 5px;
                     width: 90px;
                     height: 60px;
                     font-weight: bold;
                     border: none;
                     outline: none;
-                    box-shadow: 5px 5px 8px black;
+                    border: 1px solid rgba(255,255,255,0.5);
+                    border-right: 1px solid rgba(255,255,255,0.2);
+                    border-bottom: 1px solid rgba(255,255,255,0.2);
+                    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+                    backdrop-filter: blur(5px);
                     cursor: pointer;
                     transition: .2s;
                     &:hover{
@@ -202,28 +180,20 @@ body{
                 }
             }
 
-            &::before{
-                content: "";
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                background: rgba(0, 0, 0, .8);
-            }
-
             h1{
                 z-index: 5;
             }
             .adorno{
                 
                 position: absolute;
-                background: linear-gradient(to top, rgb(8, 196, 8, 0), rgb(4, 156, 11) 98%);
+                background: linear-gradient(to top, rgb(8, 196, 8, 0), rgb(255, 123, 0) 98%);
                 width: 100%;
                 height: 150px;
                 top: 0;     
             }
             .adorno_bottom{
                 position: absolute;
-                background: linear-gradient(to bottom, rgb(8, 196, 8, 0), rgb(0, 0, 0) 98%);
+                background: linear-gradient(to bottom, rgb(8, 196, 8, 0), rgb(231, 172, 62) 90%);
                 width: 100%;
                 height: 150px;
                 bottom: 0; 
@@ -234,13 +204,21 @@ body{
                 position: relative;
                 justify-content: center;
                 gap: 60px;
+                height: auto;
+                padding: 0px 0px 80px 0px;
                 li{
                     padding: 10px;
                     position: relative;
                     width: 200px;
-                    height: 250px;
+                    height: 290px;
                     overflow: hidden;
-                    background: black;
+                    border-radius: 15px;
+                    border: 1px solid rgba(255, 255, 255, 0.5);
+                    border-right: 2px solid rgba(170, 111, 0, 0.2);
+                    border-bottom: 2px solid rgba(255, 0, 0, 0.2);
+                    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+                    backdrop-filter: blur(5px);
+                    background: rgba(228, 177, 8, 0.1);
                     display: flex;
                     flex-direction: column;
                     align-items: start;
@@ -249,27 +227,34 @@ body{
                         position: relative;
                         width: 170px;
                         height: 170px;
+                        transition: .2s;
                     }
                     h2{
-                        font-weight: 100;
-                        font-size: 16px;
-                        color: rgba(255, 255, 255, 0.8);
+                        font-size: 15px;
+                        color: rgba(255, 255, 255, 1);
+                        font-weight: bolder;
                     }
                     .orange{
-                        background: rgb(255, 154, 39);
+                        background: rgb(255, 102, 0);
                         padding: 2px;
                         border-radius: 5px;
+                    }
+                    
+                    &:hover{
+                        img{
+                            scale: 1.2;
+                        }
                     }
                 }
             }
         }
         .horario{
-            background: black;
+            background: url(./img/Fondo_Hora.jpg) 100%;
             display: flex;
             justify-content: center;
             flex-direction: column;
             height: auto;
-            min-height: 250px;
+            min-height: 200px;
             align-items: center;
             padding: 50px;
             
@@ -282,7 +267,7 @@ body{
             }
         }
         .rese_conta{
-            background: url(/img/RESE_CONTA.jpg);
+            background: url(/img/RESE_CONTA.jpg) 100%;
             background-size:cover;
             display: flex;
             position: relative;
@@ -292,11 +277,12 @@ body{
             align-items: center;
             padding: 30px;
             gap: 20px;
+            font-weight: bolder;
             .adorno_rese_conta{
                 position: absolute;
                 width: 100%;
                 height: 100px;
-                background: linear-gradient(to bottom, black 10%, rgba(170, 137, 137,0) );
+                background: linear-gradient(to bottom, rgb(235, 180, 80) 25%, rgba(170, 137, 137,0) );
                 top: 0;
             }
             &::before{
@@ -349,9 +335,9 @@ body{
         align-items: center;
         padding: 10px 15px;
         height: 50px;
-        background: rgba(146, 33, 33, 0.7);
+        background: rgba(233, 132, 0, 0.9);
         color: white;
-        font-size: 10px;
+        font-size: 9px;
         user-select: none;
         h1{
             cursor: pointer;
