@@ -101,10 +101,24 @@ body main .bienvenida .bienvenida_container {
      -moz-user-select: none;
           user-select: none;
 }
-body main .bienvenida .bienvenida_container a {
-  background: rgb(209, 101, 0);
+body main .bienvenida .bienvenida_container .btn_bienvenida {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 100px;
+}
+body main .bienvenida .bienvenida_container .btn_bienvenida a {
+  background: #ff1d0b;
   padding: 8px;
   border-radius: 8px;
+}
+body main .bienvenida .bienvenida_container .btn_bienvenida .bien_Whats {
+  background: green;
+}
+body main .bienvenida .bienvenida_container .bien_unete {
+  color: white;
+  font-weight: bolder;
 }
 body main .nosotros {
   overflow: hidden;
@@ -149,6 +163,10 @@ body main .nosotros .nosotros_img {
   height: auto;
   width: 50%;
 }
+body main .nosotros .ubic_img {
+  border-radius: 15%;
+  box-shadow: 0 0 10px rgb(255, 174, 0);
+}
 body main .menu {
   background: url(./img/FondoMenu3.jpg);
   position: relative;
@@ -161,14 +179,14 @@ body main .menu {
 }
 body main .menu h1 {
   margin: 20px 20px 0px 20px;
-  font-size: 40px;
+  font-size: 45px;
+  font-weight: bolder;
 }
 body main .menu .barra_menu {
   position: relative;
   width: 100%;
   gap: 0;
   height: 130px;
-  z-index: 10;
 }
 body main .menu .barra_menu button {
   position: relative;
@@ -184,7 +202,7 @@ body main .menu .barra_menu button {
   font-size: 15px;
 }
 body main .menu .barra_menu .activebtn, body main .menu .barra_menu button:hover {
-  background-color: orangered;
+  background-color: #ff1d0b;
   color: white;
 }
 body main .menu h1 {
@@ -199,7 +217,7 @@ body main .menu .adorno {
 }
 body main .menu .adorno_bottom {
   position: absolute;
-  background: linear-gradient(to bottom, rgba(8, 196, 8, 0), rgb(231, 172, 62) 90%);
+  background: linear-gradient(to bottom, rgba(8, 196, 8, 0), rgb(139, 105, 41) 90%);
   width: 100%;
   height: 150px;
   bottom: 0;
@@ -263,6 +281,16 @@ body main .horario {
   min-height: 200px;
   align-items: center;
   padding: 50px;
+  position: relative;
+}
+body main .horario::after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
 }
 body main .horario ul {
   list-style: none;
@@ -270,6 +298,9 @@ body main .horario ul {
 body main .horario ul li {
   margin-top: 10px;
   left: 0;
+}
+body main .horario h1, body main .horario h3 {
+  z-index: 5;
 }
 body main .rese_conta {
   background: url(/img/RESE_CONTA.jpg) 100%;
@@ -288,7 +319,7 @@ body main .rese_conta .adorno_rese_conta {
   position: absolute;
   width: 100%;
   height: 100px;
-  background: linear-gradient(to bottom, rgb(235, 180, 80) 25%, rgba(170, 137, 137, 0));
+  background: linear-gradient(to bottom, rgb(139, 105, 41) 25%, rgba(170, 137, 137, 0));
   top: 0;
 }
 body main .rese_conta::before {
@@ -338,9 +369,9 @@ body header {
   align-items: center;
   padding: 10px 15px;
   height: 50px;
-  background: rgba(233, 132, 0, 0.9);
+  background: #ff1d0b;
   color: white;
-  font-size: 9px;
+  font-size: 11px;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -357,8 +388,7 @@ body header h1:hover {
 }
 body header .sections {
   position: relative;
-  width: 70%;
+  width: 55%;
   display: flex;
-  justify-content: space-between;
-  margin-left: 5px;
+  justify-content: space-around;
 }/*# sourceMappingURL=style.css.map */
