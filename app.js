@@ -1,62 +1,68 @@
 const Platos=[
     {
-        imagen:"/img/Platos2/Medio_pique.png",
+        imagen:"/img/Platos2/EXTRAS/PIQUE_MACHO.png",
         titulo: "Pique Macho",
         guar: "Papa frita",
         precio: "25"
     },
     {
-        imagen: "/img/Platos2/medio_lomo.png",
+        imagen: "/img/Platos2/EXTRAS/MEDIO_LOMO.png",
         titulo: "Medio Lomo",
         guar: "Ensalada Papa Arroz",
         precio: "16"
     },
     {
-        imagen: "/img/Platos2/milanesa_carne.png",
+        imagen: "/img/Platos2/EXTRAS/MILANESA_CARNE.png",
         titulo: "Milanesa de Carne",
         guar: "Ensalada Papa Arroz",
         precio: "18"
     },
     {
-        imagen: "/img/Platos2/Milanesa_pollo.png",
+        imagen: "/img/Platos2/EXTRAS/MILANESA_POLLO.png",
         titulo: "Milanesa de Pollo",
         guar: "Ensalada Papa Arroz",
         precio: "18"
     },
     {
-        imagen: "/img/Platos2/pollo_dorado.png",
+        imagen: "/img/Platos2/EXTRAS/POLLO_DORADO.png",
         titulo: "Pollo Dorado",
         guar: "Ensalada Papa Arroz",
         precio: "15"
     },
     {
-        imagen: "/img/Platos2/Asado_especial.png",
+        imagen: "/img/Platos2/EXTRAS/ASADO_ESPECIAL.png",
         titulo: "Asado Especial",
         guar: "Chorrellana Papa Arroz",
         precio: "18"
     },
     {
-        imagen: "/img/Platos2/silpancho_cochabambino.png",
+        imagen: "/img/Platos2/EXTRAS/SILPANCHO_COCHABAMBINO.png",
         titulo: "Silpancho Cochabambino",
         guar: "Sarsa Papa Arroz",
         precio: "18"
     },
     {
-        imagen: "/img/Platos2/Caldo_de_pollo.png",
+        imagen: "/img/Platos2/EXTRAS/CALDO_POLLO.png",
         titulo: "Caldo de Pollo",
         guar: "Chuño Papa Arroz",
         precio: "13"
     },
     {
-        imagen: "/img/Platos2/Revuelto_carne.png",
+        imagen: "/img/Platos2/EXTRAS/REVUELTO_CARNE.png",
         titulo: "Revuelto de Carne",
         guar: "Arroz",
         precio: "18"
     },
     {
-        imagen: "/img/Platos2/Revuelto_Pollo.png",
+        imagen: "/img/Platos2/EXTRAS/REVUELTO_POLLO.png",
         titulo: "Revuelto de Pollo",
         guar: "Arroz",
+        precio: "18"
+    },
+    {
+        imagen: "/img/Platos2/EXTRAS/POLLO_PLANCHA.png",
+        titulo: "Pollo a la Plancha",
+        guar: "Arroz, Papa frita",
         precio: "18"
     }
 ];
