@@ -125,13 +125,13 @@ const Omelettes = [
 
 const Especial = [
     {
-        imagen:"/img/Platos2/Chicharron_pollo.png",
+        imagen:"/img/Platos2/EXTRAS/CHICHARRON_POLLO.png",
         titulo:"Chicharron de Pollo",
         guar: "Chuño Papa Mote",
         precio:"17"
     },
     {
-        imagen:"/img/Platos2/Chicharron_chancho.png",
+        imagen:"/img/Platos2/EXTRAS/CHICHARRON_CERDO.png",
         titulo:"Chicharron de Chancho",
         guar: "Chuño Papa Mote",
         precio:"20"
@@ -273,3 +273,12 @@ function showSandwichOmellete(){
     MenuLista.innerHTML = '';
     MenuLista.innerHTML = SandwichLista + OmelettesLista;
 }
+
+
+const btnlist = document.querySelectorAll('.btnColor');
+btnlist.forEach(btnEl =>{
+    btnEl.addEventListener('click', ()=>{
+        document.querySelector('.activebtn')?.classList.remove('activebtn');
+        btnEl.classList.add('activebtn');
+    });
+});
