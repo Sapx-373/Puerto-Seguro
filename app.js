@@ -9,13 +9,13 @@ const Platos=[
         imagen: "/img/Platos2/medio_lomo.png",
         titulo: "Medio Lomo",
         guar: "Ensalada Papa Arroz",
-        precio: "15"
+        precio: "16"
     },
     {
         imagen: "/img/Platos2/milanesa_carne.png",
         titulo: "Milanesa de Carne",
         guar: "Ensalada Papa Arroz",
-        precio: "17"
+        precio: "18"
     },
     {
         imagen: "/img/Platos2/Milanesa_pollo.png",
@@ -33,7 +33,7 @@ const Platos=[
         imagen: "/img/Platos2/Asado_especial.png",
         titulo: "Asado Especial",
         guar: "Chorrellana Papa Arroz",
-        precio: "17"
+        precio: "18"
     },
     {
         imagen: "/img/Platos2/silpancho_cochabambino.png",
@@ -75,22 +75,17 @@ const Sandwich = [
     {
         imagen: "/img/Platos2/Sandwich_Huevo.png",
         titulo: "Sandwich de Huevo",
-        precio: "4"
+        precio: "5"
     },
     {
         imagen: "/img/Platos2/Sandiwch_lomiito.png",
         titulo: "Sandwich de Lomito",
-        precio: "9"
-    },
-    {
-        imagen: "/img/Platos2/Sandwich_Mortadela.png",
-        titulo: "Sandwich de Mortadela",
-        precio: "4"
+        precio: "10"
     },
     {
         imagen: "/img/Platos2/Sandwich_Salchicha.png",
         titulo: "Sandwich de Salchicha",
-        precio: "4"
+        precio: "5"
     },
     {
         imagen: "/img/Platos2/Sandwich_Queso.png",
@@ -100,7 +95,7 @@ const Sandwich = [
     {
         imagen: "/img/Platos2/Salchipapa.png",
         titulo: "Salchipapa",
-        precio: "8"
+        precio: "10"
     }
 ]
 
@@ -161,7 +156,7 @@ const Jugos =[
     {
         imagen:"/img/Platos2/jugo_vitanimico.png",
         titulo: "Jugo Vitanímico",
-        precio: "10"
+        precio: "15"
     },
 ]
 

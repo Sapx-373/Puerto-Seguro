@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Josefin Sans", Arial, Helvetica, sans-serif ;
 }
+
+
+
 span{
     color: orange;
 }
@@ -17,7 +22,7 @@ a{
     }
 }
 p{
-    font-size: 15px;
+    font-size: 16px;
 }
 body{
     user-select: none;
@@ -104,6 +109,7 @@ body{
             display: flex;
             align-items: center;
             min-height: 400px;
+            padding: 30px;
             color: rgb(126, 68, 3);
             background: rgb(248, 231, 183);
             width: 100%;
@@ -136,7 +142,9 @@ body{
             .nosotros_img{
                 padding: 0 50px 0 0;
                 position: relative;
+                height: auto;
                 width: 50%;
+                
             }
         }
         .menu{
@@ -231,12 +239,15 @@ body{
                     }
                     h2{
                         font-size: 15px;
-                        color: rgba(255, 255, 255, 1);
+                        color: rgb(255, 255, 255);
                         font-weight: bolder;
                     }
                     .orange{
-                        background: rgb(255, 102, 0);
-                        padding: 2px;
+                        color: rgb(48, 23, 0);
+                        font-weight: bolder;
+                        font-size: 16px;
+                        background: rgb(247, 149, 70);
+                        padding: 3px 10px;
                         border-radius: 5px;
                     }
                     
