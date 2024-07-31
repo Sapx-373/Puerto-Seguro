@@ -1,67 +1,67 @@
 const Platos=[
     {
         imagen:"/img/Platos2/EXTRAS/PIQUE_MACHO.png",
-        titulo: "Pique Macho",
+        titulo: "PIQUE MACHO",
         guar: "Papa frita",
         precio: "25"
     },
     {
         imagen: "/img/Platos2/EXTRAS/MEDIO_LOMO.png",
-        titulo: "Medio Lomo",
+        titulo: "MEDIO LOMO",
         guar: "Ensalada Papa Arroz",
         precio: "16"
     },
     {
         imagen: "/img/Platos2/EXTRAS/MILANESA_CARNE.png",
-        titulo: "Milanesa de Carne",
+        titulo: "MILANESA DE CARNE",
         guar: "Ensalada Papa Arroz",
         precio: "18"
     },
     {
         imagen: "/img/Platos2/EXTRAS/MILANESA_POLLO.png",
-        titulo: "Milanesa de Pollo",
+        titulo: "MILANESA DE POLLO",
         guar: "Ensalada Papa Arroz",
         precio: "18"
     },
     {
         imagen: "/img/Platos2/EXTRAS/POLLO_DORADO.png",
-        titulo: "Pollo Dorado",
+        titulo: "POLLO DORADO",
         guar: "Ensalada Papa Arroz",
         precio: "15"
     },
     {
         imagen: "/img/Platos2/EXTRAS/ASADO_ESPECIAL.png",
-        titulo: "Asado Especial",
+        titulo: "ASADO ESPECIAL",
         guar: "Chorrellana Papa Arroz",
         precio: "18"
     },
     {
         imagen: "/img/Platos2/EXTRAS/SILPANCHO_COCHABAMBINO.png",
-        titulo: "Silpancho Cochabambino",
+        titulo: "SILPANCHO COCHABAMBINO",
         guar: "Sarsa Papa Arroz",
         precio: "18"
     },
     {
         imagen: "/img/Platos2/EXTRAS/CALDO_POLLO.png",
-        titulo: "Caldo de Pollo",
+        titulo: "CALDO DE POLLO",
         guar: "Chuño Papa Arroz",
         precio: "13"
     },
     {
         imagen: "/img/Platos2/EXTRAS/REVUELTO_CARNE.png",
-        titulo: "Revuelto de Carne",
+        titulo: "REVUELTO DE CARNE",
         guar: "Arroz",
         precio: "18"
     },
     {
         imagen: "/img/Platos2/EXTRAS/REVUELTO_POLLO.png",
-        titulo: "Revuelto de Pollo",
+        titulo: "REVUELTO DE POLLO",
         guar: "Arroz",
         precio: "18"
     },
     {
         imagen: "/img/Platos2/EXTRAS/POLLO_PLANCHA.png",
-        titulo: "Pollo a la Plancha",
+        titulo: "POLLO A LA PLANCHA",
         guar: "Arroz, Papa frita",
         precio: "18"
     }
@@ -126,13 +126,13 @@ const Omelettes = [
 const Especial = [
     {
         imagen:"/img/Platos2/EXTRAS/CHICHARRON_POLLO.png",
-        titulo:"Chicharron de Pollo",
+        titulo:"CHICHARRON DE POLLO",
         guar: "Chuño Papa Mote",
         precio:"17"
     },
     {
         imagen:"/img/Platos2/EXTRAS/CHICHARRON_CERDO.png",
-        titulo:"Chicharron de Chancho",
+        titulo:"CHICHARRON DE CHANCHO",
         guar: "Chuño Papa Mote",
         precio:"20"
     }

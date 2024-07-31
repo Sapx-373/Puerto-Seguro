@@ -114,6 +114,22 @@ body{
                     color: white;
                     font-weight: bolder;
                 }
+                .logo_puerto{
+                    position: relative;
+                    top: 10px;
+                    left: 0;
+                    z-index: 1;
+                    height: 140px;
+                    width: 140px;
+                }
+
+                .bien_header{
+                    position: relative;
+                    display: flex;
+                    gap: 15px;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
             
         }
@@ -130,14 +146,6 @@ body{
             width: 100%;
             justify-content: center;
             font-weight: bolder;
-            .logo_puerto{
-                position: absolute;
-                top: 10px;
-                left: 0;
-                z-index: 1;
-                height: 90px;
-                width: 90px;
-            }
             .adorno_top{
                 top: -2px;
                 position: absolute;
@@ -254,8 +262,9 @@ body{
                     background: rgba(177, 82, 4, 0.5);
                     display: flex;
                     flex-direction: column;
-                    align-items: start;
+                    align-items: center;
                     gap: 10px;
+                    justify-content: center;
                     img{
                         position: relative;
                         width: 170px;
@@ -267,14 +276,36 @@ body{
                         color: rgb(255, 255, 255);
                         font-weight: bolder;
                     }
+                    h2:nth-child(1), h2:nth-child(2){
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        text-align: center;
+                    }
                     .orange{
+                        position: relative;
                         color: rgb(48, 23, 0);
                         font-weight: bolder;
                         font-size: 16px;
-                        background: rgb(251, 255, 0);
                         padding: 3px 10px;
-                        border-radius: 5px;
+                        width: 100%;
+                        
+                        align-items: center;
+                        &::before{
+                            border-radius: 5px;
+                            z-index: -1;
+                            content: "";
+                            width: 40%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            background: rgb(251, 255, 0);
+                        }
                     }
+                    
                     
                     &:hover{
                         img{
@@ -485,3 +516,92 @@ body{
    
    
 }
+@media (max-width: 420px) {
+    h2{
+     font-size: 14px;
+    }
+    h1{
+     font-size: 20px;
+    }
+    body{
+         main{
+             .bienvenida{
+                 
+                 .bienvenida_container{
+                     h1{
+                         font-size: 19px;
+                     }
+                     .logo_puerto{
+                        width: 100px;
+                        height: 100px;
+                     }
+                     p{
+                         font-size: 13px;
+                     }
+                     font-size: 1px;
+                     .btn_bienvenida{
+                         gap: 40px;
+                     }
+                 }
+             }
+             .nosotros{
+                 justify-content: space-around;
+                 padding: 0 10px;
+                 margin: 0;
+                 height: auto;
+                 .nosotros_content{
+                     padding: 0;
+                     h1{
+                         font-size: 18px;
+                     }
+                     p{
+                         font-size: 13px;
+                     }
+                 }
+                 .ubic_img{
+                     width: 210px;
+                     height: 210px;
+                     
+                 }
+             }
+             .menu{
+                 h1{
+                     font-size: 30px;
+                 }
+                 .barra_menu{
+                     height: 140px;
+                     button{
+                         font-size: 12px;
+                     }
+                 }
+                 .cajamenu{
+                     li{
+                         width: 150px;
+                         height: 245px;
+                         img{
+                             width: 120px;
+                             height: 120px;
+                         }
+                         .orange::before{
+                            left: 5px;
+                         }
+                         h2{
+                            font-size: 15px;
+                         }
+                     }
+                 }
+             }
+         }
+         header{
+            h1{
+                font-size: 16px;
+            }
+            h2{
+                font-size: 12px;
+            }
+         }
+    }
+    
+    
+    
+ }
